@@ -1,0 +1,13 @@
+name: hello-world
+image: okteto/golang:1
+command: ["bash"]
+resources:
+  limits:
+    cpu: 2
+    memory: 4Gi
+volumes:
+  - /go
+  - /root/.cache/go-build
+  - /root/.vscode-server
+sync:
+  - .:/app

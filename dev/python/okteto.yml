@@ -1,0 +1,6 @@
+name: vote
+environment:
+  - FLASK_ENV=development
+command: ["python", "app.py"]
+sync:
+  - .:/src
